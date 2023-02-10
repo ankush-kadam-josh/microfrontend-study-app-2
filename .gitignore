@@ -1,0 +1,6 @@
+#node modules from each module federation projects
+**/*/node_modules
+#dist will be the webpack bundle file from each module federation project
+**/*/dist
+#package.lock from each module federation project
+**/*/package-lock.json
