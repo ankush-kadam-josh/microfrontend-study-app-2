@@ -1,0 +1,22 @@
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.m?js$/,//tells babel to process all files with extension ending with .mjs or .js 
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              '@babel/preset-react',
+              '@babel/preset-env'
+            ],
+            plugins: [
+              '@babel/plugin-transform-runtime'
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
